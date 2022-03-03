@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class BankAccount {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		BankAccount ba = new BankAccount();
+		Account ac = ba.new Account("Aaditya", 01);
+		ac.showMenu();
 	}
 
 	class Account{
@@ -61,7 +62,7 @@ public class BankAccount {
 			System.out.println("press E For Exit");
 			
 			do {
-				System.out.println("\t Enter An Option");
+				System.out.println("Enter An Option");
 				option = sc.next().charAt(0);
 				System.out.println("\n");
 			
@@ -89,7 +90,7 @@ public class BankAccount {
 					System.out.println("\n");
 				break;
 				case 'E':
-					System.out.println("/tExiting...............");
+					System.out.println("Exiting...............");
 					break;
 				default:
 					System.out.println("Invalid input ! Please try Again");
